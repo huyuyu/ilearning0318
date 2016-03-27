@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/download/ConfigDownload.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/download/InfoProvider.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/guider/ScrollLayoutActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/ilearning/DownLoadActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/ilearning/FileTransfer.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/ilearning/LogIn.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/ilearning/TextURLWebView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/ilearning/WifiHotActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/service/BackService.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/uti/ManaMySeekBar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ilearning0123/src/hpecl/uclass/uti/ViewPagerIndicator.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

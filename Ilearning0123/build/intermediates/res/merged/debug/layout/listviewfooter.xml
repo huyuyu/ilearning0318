@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<RelativeLayout 
+    android:id="@+id/commentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#14a2d4"
+    >
+<TextView 
+    android:id="@+id/title"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"  
+    android:textSize="20sp"
+    android:text="发表评论"/>
+<Button 
+    android:id="@+id/comment"
+    android:layout_height="20sp"
+    android:layout_width="wrap_content"
+    android:layout_alignBaseline="@id/title"
+    android:layout_alignParentRight="true"
+    android:gravity="center_vertical"
+    android:background="#14a2d4"
+    android:hint="共有0条评论"
+    />
+</RelativeLayout>
+<TextView 
+    android:id="@+id/identify"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/commentlayout"
+    android:text="验证码："
+    android:layout_marginTop="20sp"
+    android:textSize="20sp"/>
+<EditText 
+    android:id="@+id/eidentify"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:hint="验证码"
+    android:layout_alignTop="@id/identify"
+    android:layout_alignBaseline="@id/identify"
+    android:textSize="15sp"
+    android:background="@drawable/edittextbackground"
+    android:layout_toRightOf="@id/identify"/>
+
+<ImageView
+    android:id="@+id/image"
+    android:layout_width="50sp"
+    android:layout_height="36sp"
+    android:layout_alignTop="@+id/eidentify"
+    android:layout_marginLeft="20sp"
+    android:layout_toRightOf="@id/eidentify"
+    android:minHeight="28sp"
+    android:minWidth="40sp" />
+
+<EditText 
+    android:id="@+id/etext"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:hint="评论"
+    android:lines="3"
+    android:gravity="top"
+    android:layout_marginTop="10sp"
+    android:background="@drawable/edittextbackground"
+    android:layout_below="@id/identify"/>
+
+<Button 
+    android:id="@+id/submit"
+    android:layout_height="25sp"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/etext"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10sp"
+    android:background="@drawable/button_creat"
+    android:textColor="#fff"
+    android:text="提交"/>
+</RelativeLayout>
+<!-- From: file:/E:/ilearning0318/Ilearning0123/res/layout/listviewfooter.xml -->

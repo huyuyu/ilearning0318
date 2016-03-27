@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+	    <Button
+	        android:id="@+id/submit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="25sp"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="5sp"
+	        android:layout_marginRight="3sp"
+	        android:background="@drawable/button_creat"
+	        android:textColor="#fff"
+	        android:text="@string/submit" />
+
+	    <EditText
+	        android:id="@+id/eidentifyingcode"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+
+	        android:layout_marginLeft="3sp"
+	        android:layout_marginTop="3sp"
+	        android:background="@drawable/edittextbackground"
+	        android:ems="4"
+	        android:hint="@string/eidentifyingcode"
+	        android:inputType="number"
+	        android:textSize="15sp" />
+
+	    <ImageView
+	        android:id="@+id/identifyingcodepicture"
+	        android:layout_width="50sp"
+	        android:layout_height="36sp"
+	        android:layout_alignTop="@+id/eidentifyingcode"
+	        android:layout_marginLeft="20dp"
+	        android:layout_toRightOf="@+id/eidentifyingcode" 
+	        android:minWidth="40sp"
+        	android:minHeight="28sp"/>
+
+ <EditText
+     android:id="@+id/etext"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/submit"
+     android:layout_marginTop="13sp"
+     android:layout_marginLeft="3sp" 
+     android:layout_marginRight="3sp" 
+     android:background="@drawable/edittextbackground"
+     android:gravity="top"
+     android:hint="@string/comment"
+     android:inputType="textMultiLine"
+     android:maxHeight="50dp"
+     android:minLines="3"
+     android:textSize="15sp" />
+
+</RelativeLayout>

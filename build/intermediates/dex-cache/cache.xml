@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\ilearning0318\Ilearning0123\libs\jsoup-1.7.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="872693211fd68d1c4e116cf90021603207725e19">
+        <dex dex="E:\ilearning0318\Ilearning0123\build\intermediates\pre-dexed\debug\jsoup-1.7.2-3417a68a490206baac0e75f2d34c541d3eda7a2e.jar" />
+    </item>
+    <item
+        jar="E:\ilearning0318\Ilearning0123\build\intermediates\exploded-aar\ilearning0318\android-support-v7-appcompat\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7645f307b5bae0873d629163afeaab2514b2146b">
+        <dex dex="E:\ilearning0318\Ilearning0123\build\intermediates\pre-dexed\debug\classes-298824b62a5c2b632d6fe7c8c97557badc92316b.jar" />
+    </item>
+    <item
+        jar="E:\ilearning0318\Ilearning0123\libs\open189api.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="13ce1d4da5f866f7d6d02670dd13c46990b2ed81">
+        <dex dex="E:\ilearning0318\Ilearning0123\build\intermediates\pre-dexed\debug\open189api-5ef07a83ac56eb241208123f461bf7195cd69cab.jar" />
+    </item>
+    <item
+        jar="E:\ilearning0318\Ilearning0123\build\intermediates\exploded-aar\ilearning0318\android-support-v7-appcompat\unspecified\jars\libs\android-support-v7-appcompat.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6c77cd21db2ca4fe31aa1fd31417fe63be29e733">
+        <dex dex="E:\ilearning0318\Ilearning0123\build\intermediates\pre-dexed\debug\android-support-v7-appcompat-666002480aee5e505935d594211a60a051cc77ed.jar" />
+    </item>
+    <item
+        jar="E:\ilearning0318\Ilearning0123\libs\android-smart-image-view-1.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d76ea8c3e9a60101244d6d04aff8cc75888570f0">
+        <dex dex="E:\ilearning0318\Ilearning0123\build\intermediates\pre-dexed\debug\android-smart-image-view-1.0.0-a5ac45935a3ca701984c2901c8145be3ac38f693.jar" />
+    </item>
+    <item
+        jar="E:\ilearning0318\Ilearning0123\libs\zip4j_1.3.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3e20955923c5b61bfbcd4590a87720643c729695">
+        <dex dex="E:\ilearning0318\Ilearning0123\build\intermediates\pre-dexed\debug\zip4j_1.3.2-1aa6c01aceeaf7c29de72435a37487c1196c4063.jar" />
+    </item>
+    <item
+        jar="E:\ilearning0318\Ilearning0123\build\intermediates\exploded-aar\ilearning0318\android-support-v7-appcompat\unspecified\jars\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fb6b7b885e8f62731e3f2fb9e64970e2d1d5ef5b">
+        <dex dex="E:\ilearning0318\Ilearning0123\build\intermediates\pre-dexed\debug\android-support-v4-e7edc2139a72b96f242fd4cfbb712de57cbb6c22.jar" />
+    </item>
+
+</items>

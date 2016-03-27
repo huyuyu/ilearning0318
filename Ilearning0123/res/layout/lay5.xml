@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    
+    <hpecl.uclass.uti.CustomListview 
+    android:id="@+id/listview5"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    ></hpecl.uclass.uti.CustomListview>
+
+<!-- <ListView -->
+<!--         android:id="@+id/listview5" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_centerHorizontal="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:divider="#EEEEEE" -->
+<!--         android:dividerHeight="1dp" -->
+        
+<!--         android:scrollbarStyle="outsideOverlay" -->
+<!--         android:scrollingCache="true" -->
+<!--         android:clipToPadding="false" /> -->
+    <TextView
+        android:id="@+id/empty"
+        android:gravity="center"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="please add notes"
+        android:textColor="#9E9E9E"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    
+
+</RelativeLayout>

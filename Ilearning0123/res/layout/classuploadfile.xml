@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<TextView 
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp"
+	    android:text="@string/title"/>
+    <EditText 
+        android:id="@+id/etitle"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/title"
+	    android:layout_alignBottom="@id/title"
+	    android:ems="10"
+	    android:inputType="text"/>
+    
+    <TextView 
+	    android:id="@+id/studentname"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp"
+	    android:layout_below="@id/title"
+	    android:text="@string/studentname"/>
+    <EditText 
+        android:id="@+id/estudentname"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/studentname"
+	    android:layout_alignBottom="@id/studentname"
+	    android:ems="10"
+	    android:inputType="text"/>
+    
+    
+    
+    
+    
+    
+    
+    <TextView 
+	    android:id="@+id/studentnumber"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp"
+	    android:layout_below="@id/studentname"
+	    android:text="@string/studentnumber"/>
+    <EditText 
+        android:id="@+id/estudentnumber"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/studentnumber"
+	    android:layout_alignBottom="@id/studentnumber"
+	    android:ems="10"
+	    android:inputType="number"/>
+    
+    
+    
+    
+    
+    
+    <TextView 
+	    android:id="@+id/teacher"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp"
+	    android:layout_below="@id/studentnumber"
+	    android:text="@string/teacher"/>
+    <EditText 
+        android:id="@+id/eteacher"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/teacher"
+	    android:layout_alignBottom="@id/teacher"
+	    android:ems="10"
+	    android:inputType="text"/>
+    
+    
+    <TextView 
+	    android:id="@+id/introduction"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="30sp"
+	    android:layout_below="@id/teacher"
+	    android:text="@string/introduction"/>
+    <EditText 
+        android:id="@+id/eintroduction"
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/introduction"
+	    android:layout_alignBottom="@id/introduction"
+	    android:ems="10"
+	    android:inputType="text"/>
+    
+    <Button 
+        android:id="@+id/selectfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/introduction"
+        android:text="@string/selectuploadfile"
+        android:layout_centerHorizontal="true"/>
+    
+     <Button 
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectfile"
+        android:text="@string/submit"
+        android:layout_centerHorizontal="true"/>
+    
+    
+</RelativeLayout>

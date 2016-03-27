@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name = "head_tips_size">10sp</dimen>
+    <dimen name = "last_updated_size">15sp</dimen>
+    
+</resources>

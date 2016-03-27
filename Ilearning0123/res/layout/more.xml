@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F3F6"
+    android:orientation="vertical" >
+
+    <!-- 全圆角 -->
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout style="@style/single_layout" >
+
+            <TextView
+                android:id="@+id/share"
+                style="@style/usertext"
+                android:text="@string/more_share" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <!-- 上圆角 -->
+
+        <LinearLayout style="@style/top_layout" >
+
+            <TextView
+                android:id="@+id/light"
+                style="@style/usertext"
+                android:text="@string/more_light" />
+            
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+
+        <View style="@style/bg_line" />
+        
+        
+        
+        <!-- 无圆角 -->
+
+        <LinearLayout style="@style/mid_layout" >
+
+            <TextView
+                android:id="@+id/rest"
+                style="@style/usertext"
+                android:text="@string/more_rest" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+        
+         <!-- 无圆角 -->
+
+        <LinearLayout style="@style/mid_layout" >
+
+            <TextView
+                android:id="@+id/guider"
+                style="@style/usertext"
+                android:text="@string/more_guider" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+
+        <View style="@style/bg_line" />
+        
+        
+        <!-- 下圆角 -->
+
+        <LinearLayout style="@style/bottom_layout" >
+
+            <TextView
+                android:id="@+id/noti"
+                style="@style/usertext"
+                android:text="@string/more_noti" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角 -->
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout style="@style/single_layout" >
+
+            <TextView
+                android:id="@+id/aboutit"
+                style="@style/usertext"
+                android:text="关于悦课" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 全圆角 -->
+
+    <LinearLayout style="@style/wrap_layout" >
+
+        <LinearLayout style="@style/single_layout" >
+
+            <TextView
+                android:id="@+id/contactus"
+                style="@style/usertext"
+                android:text="联系我们" />
+
+            <ImageView style="@style/img_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

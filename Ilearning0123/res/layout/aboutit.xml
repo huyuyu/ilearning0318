@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <ImageView 
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"/>
+    <TextView 
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="版本：V1.3"/>
+    
+    <TextView 
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/version"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="版权所有：© 2016, 高性能嵌入式计算实验室"/>
+      <TextView 
+        android:id="@+id/copyright1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/copyright"
+        android:layout_centerHorizontal="true"
+        android:text="北京大学软件与微电子学院"/>
+</RelativeLayout>

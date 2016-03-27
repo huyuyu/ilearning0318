@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white"
+    >
+    <TextView 
+        android:id="@+id/onlinemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在线成员："
+        android:textSize="20sp"/>
+
+    <hpecl.uclass.uti.CustomListview
+    android:id="@+id/listview1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    ></hpecl.uclass.uti.CustomListview>
+    
+     <TextView 
+        android:id="@+id/sharefile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接收的文件："
+        android:textSize="20sp"/>
+    
+     <ListView
+    android:id="@+id/listviewfile"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    ></ListView>
+
+</LinearLayout>

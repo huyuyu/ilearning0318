@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="open189api">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Ilearning0123/libs/open189api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

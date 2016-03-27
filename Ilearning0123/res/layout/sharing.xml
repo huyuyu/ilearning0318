@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/maintitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:text="交流共享"/>
+    
+	<TextView 
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/maintitle"
+	    android:layout_marginTop="15sp"
+	    android:text="@string/sharetitle"
+	    android:textSize="20sp"/>
+	<EditText 
+	    android:id="@+id/etitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/title"
+	    android:layout_alignBaseline="@id/title"
+	    android:hint="输入标题"
+	    android:background="@drawable/edittextbackground"
+	    android:ems="10"/>
+	<TextView 
+	    android:id="@+id/keyword"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/title"
+	    android:text="关键字："
+	    android:layout_marginTop="15sp"
+	    android:textSize="20sp"
+	    />
+	<EditText 
+	    android:id="@+id/ekeyword"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/keyword"
+	    android:layout_alignBaseline="@id/keyword"
+	    android:hint="输入关键字，用“，”分开"
+	    android:background="@drawable/edittextbackground"
+	    android:ems="10"/>
+	
+	
+	<TextView 
+	    android:id="@+id/contentintroduct"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/contentintroduct"
+	    android:layout_marginTop="15sp"
+	    android:layout_below="@id/keyword"
+	    android:textSize="20sp"/>
+	
+	<EditText 
+	    android:id="@+id/eintroduc"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:ems="20"
+	    android:lines="2"
+	    android:gravity="top"
+	    android:hint="输入内容简介"
+	    android:layout_below="@id/contentintroduct"
+	    android:background="@drawable/edittextbackground"/>
+	
+	
+	<TextView 
+	    android:id="@+id/author"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/author"
+	    android:layout_marginTop="15sp"
+	    android:layout_below="@id/eintroduc"
+	    android:textSize="20sp"/>
+	
+	<EditText 
+	    android:id="@+id/eauthor"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:lines="1"
+	    android:hint="您的名字"
+	  	android:layout_alignBottom="@id/author"
+	  	android:layout_alignBaseline="@id/author"
+	  	android:layout_toRightOf="@id/author"
+	    android:background="@drawable/edittextbackground"/>
+	
+	<TextView 
+	    android:id="@+id/information"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/information"
+	    android:layout_marginTop="15sp"
+	    android:layout_below="@id/author"
+	    android:textSize="20sp"/>
+	
+	<EditText 
+	    android:id="@+id/einformation"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:lines="1"
+	    android:hint="信息来源"
+	    android:layout_alignBottom="@id/information"
+	  	android:layout_alignBaseline="@id/information"
+	  	android:layout_toRightOf="@id/information"
+	    android:background="@drawable/edittextbackground"/>
+    <TextView 
+	    android:id="@+id/content"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/sharecontent"
+	    android:layout_marginTop="15sp"
+	    android:layout_below="@id/information"
+	    android:textSize="20sp"/>
+    <EditText 
+	    android:id="@+id/econtent"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/content"
+	    android:lines="5"
+	    android:ems="50"
+	    android:hint="内容"
+	    android:gravity="top"
+	    android:background="@drawable/edittextbackground"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/econtent"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_creat"
+        android:text="@string/submit"
+        android:textColor="#fff" />
+    
+</RelativeLayout>

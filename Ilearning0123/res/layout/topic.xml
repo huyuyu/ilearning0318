@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+     <TextView 
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:gravity="center_horizontal"
+        android:text="讨论专区"
+        />
+    
+    <TextView 
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20sp"
+        android:textSize="18sp"
+        android:text="@string/discusstopic"/>
+    
+    
+    
+    <EditText 
+        android:id="@+id/equestion"
+        android:layout_toRightOf="@id/question"
+        android:layout_alignBottom="@id/question"
+        android:layout_alignBaseline="@id/question"
+        android:background="@drawable/edittextbackground"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入问题"/>
+    
+    <TextView 
+        android:id="@+id/keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/question"
+        android:text="@string/keyword"
+        />
+    
+    
+    
+    <EditText 
+        android:id="@+id/ekeyword"
+        android:layout_toRightOf="@id/keyword"
+        android:layout_below="@id/question"
+        android:layout_alignBottom="@id/keyword"
+        android:layout_alignBaseline="@id/keyword"
+        android:background="@drawable/edittextbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="多个关键字请用“，”隔开"/>
+    <TextView 
+        android:id="@+id/describequestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/keyword"
+        android:text="@string/discusscontent"/>
+    
+    
+    
+    <EditText 
+        android:id="@+id/edescribequestion"
+        
+        android:layout_below="@id/describequestion"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:lines="3"
+        android:gravity="top"
+        android:background="@drawable/edittextbackground"
+        android:hint="问题描述"/>
+	<TextView 
+	    android:id="@+id/submitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/edescribequestion"
+        android:text="@string/moderator"/>
+    
+    
+    
+    <EditText 
+        android:id="@+id/esubmitter"
+        android:layout_toRightOf="@id/submitter"
+        android:layout_below="@id/edescribequestion"
+        android:layout_alignBottom="@id/submitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/submitter"
+        android:background="@drawable/edittextbackground"
+        android:hint="提问者姓名"/>
+    
+    <Button 
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitter"
+        android:layout_marginTop="35sp"
+        android:background="@drawable/button_creat"
+	    android:textColor="#fff"
+        android:text="@string/submit"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

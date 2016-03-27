@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/titledownload"
+        android:textSize="30sp"/>
+    
+    
+	<LinearLayout 
+	    android:id="@+id/course1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/title"
+	    android:layout_marginTop="15sp">
+	    
+	 <TextView 
+        android:id="@+id/tcourse1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/a701"
+        android:textSize="17sp"
+        android:layout_marginLeft="5sp"/>
+	    
+	 <Button 
+	     android:id="@+id/downloadcourse1"
+	     android:layout_width="30sp"
+	     android:layout_height="30sp"
+	     android:background="@drawable/download_red"
+	     android:layout_marginLeft="120sp"/>
+	 <hpecl.uclass.uti.RoundProgressBar
+	    android:id="@+id/roundProgressBar1"    
+        android:layout_width="30sp"    
+        android:layout_height="30sp"   
+        android:layout_marginLeft="10sp"
+        
+        ></hpecl.uclass.uti.RoundProgressBar>
+	 <Button 
+	     android:id="@+id/opencourse1"
+	     android:layout_width="30sp"
+	     android:layout_height="30sp"
+	     android:background="@drawable/file"
+	     android:layout_marginLeft="10sp"/>
+	    
+	</LinearLayout>
+   
+	
+	<LinearLayout 
+	    android:id="@+id/course2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/course1"
+	    android:layout_marginTop="15sp">
+	    
+	 <TextView 
+        android:id="@+id/tcourse2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/d701"
+        android:textSize="17sp"
+        android:layout_marginLeft="5sp"/>
+	  <Button 
+	     android:id="@+id/downloadcourse2"
+	     android:layout_width="30sp"
+	     android:layout_height="30sp"
+	     android:background="@drawable/download_red"
+	     android:layout_marginLeft="103sp"/>
+	 <hpecl.uclass.uti.RoundProgressBar
+	    android:id="@+id/roundProgressBar2"    
+        android:layout_width="30sp"    
+        android:layout_height="30sp"   
+        android:layout_marginLeft="10sp"
+        
+        ></hpecl.uclass.uti.RoundProgressBar>
+	 <Button 
+	     android:id="@+id/opencourse2"
+	     android:layout_width="30sp"
+	     android:layout_height="30sp"
+	     android:background="@drawable/file"
+	     android:layout_marginLeft="10sp"/>   
+	    
+	    
+	</LinearLayout>
+    <LinearLayout 
+	    android:id="@+id/course3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/course2"
+	    android:layout_marginTop="15sp">
+	    
+	 <TextView 
+        android:id="@+id/tcourse3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/html"
+        android:textSize="17sp"
+        android:layout_marginLeft="5sp"/>
+	  <Button 
+	     android:id="@+id/downloadcourse3"
+	     android:layout_width="30sp"
+	     android:layout_height="30sp"
+	     android:background="@drawable/download_red"
+	     android:layout_marginLeft="63sp"/>
+	 <hpecl.uclass.uti.RoundProgressBar
+	    android:id="@+id/roundProgressBar3"    
+        android:layout_width="30sp"    
+        android:layout_height="30sp"   
+        android:layout_marginLeft="10sp"
+        
+        ></hpecl.uclass.uti.RoundProgressBar>
+	 <Button 
+	     android:id="@+id/opencourse3"
+	     android:layout_width="30sp"
+	     android:layout_height="30sp"
+	     android:background="@drawable/file"
+	     android:layout_marginLeft="10sp"/>   
+	    
+	    
+	</LinearLayout>
+    
+    
+</RelativeLayout>

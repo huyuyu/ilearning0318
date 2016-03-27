@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ilearning"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="hpecl.uclass.guider.WelcomepicActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hpecl.uclass.ilearning.Main"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="hpecl.uclass.ilearning.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="hpecl.uclass.ilearning.EditNote"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity android:name="hpecl.uclass.ilearning.PersonCload" >
+        </activity>
+        <activity android:name="hpecl.uclass.ilearning.ForumActivity" >
+        </activity>
+        <activity android:name="cn.open189.api.AuthView" />
+        <activity android:name="hpecl.uclass.ilearning.Sharing" />
+        <activity android:name="hpecl.uclass.ilearning.FileManagerment" />
+        <activity android:name="hpecl.uclass.ilearning.UploadFile" />
+        <activity android:name="hpecl.uclass.ilearning.ClassFileManagerment" />
+        <activity android:name="hpecl.uclass.ilearning.NotificationActivity" >
+        </activity>
+        <activity android:name="hpecl.uclass.ilearning.RefenceActivity" >
+        </activity>
+        <activity android:name="hpecl.uclass.ilearning.NotificationText" />
+        <activity android:name="hpecl.uclass.ilearning.RefenceText" />
+        <activity android:name="hpecl.uclass.ilearning.QuestionActivity" />
+        <activity android:name="hpecl.uclass.ilearning.AskQuestion" />
+        <activity android:name="hpecl.uclass.ilearning.AddTopic" />
+        <activity android:name="hpecl.uclass.ilearning.AboutIt" />
+        <activity android:name="hpecl.uclass.ilearning.TextURLWebView" />
+        <activity android:name="hpecl.uclass.ilearning.ImageZoom" />
+        <activity android:name="hpecl.uclass.ilearning.MoreActivity" />
+        <activity android:name="hpecl.uclass.ilearning.LogIn" />
+        <activity android:name="hpecl.uclass.ilearning.WifiHotActivity" />
+        <activity android:name="hpecl.uclass.guider.ScrollLayoutActivity" />
+        <activity android:name="hpecl.uclass.ilearning.FileTransfer" />
+        <activity android:name="hpecl.uclass.ilearning.DownLoadActivity" />
+        <activity android:name="hpecl.uclass.guider.SettingScrollLayoutActivity" />
+        <activity android:name="hpecl.uclass.ilearning.LightActivity" />
+
+        <service android:name="hpecl.uclass.service.BackService" >
+        </service>
+
+        <!-- 给内容提供者提供定义一个uri,一般建议使用包名+类名,以供其它程序调用 -->
+        <provider
+            android:name="hpecl.uclass.download.InfoProvider"
+            android:authorities="hpecl.uclass.download.InfoProvider"
+            android:exported="true" >
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+    <RelativeLayout 
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fb4748"
+        >
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_creat"
+            android:text="@string/title_back"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_text"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            />
+        
+    </RelativeLayout>
+    
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical" >
+	<ScrollView 
+		android:id="@+id/scrollView" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:scrollbarStyle="outsideOverlay" 
+		android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" 
+            >
+
+            <EditText
+                android:id="@+id/register_user_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:hint="@string/register_username"
+                android:singleLine="true"
+                android:padding="8dp" />
+
+            <include layout="@layout/layout_line" />
+
+            <EditText
+                android:id="@+id/register_passwd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:hint="@string/register_password"
+                android:singleLine="true"
+				android:password="true"
+                android:padding="8dp" />
+             <include layout="@layout/layout_line" />
+
+            <EditText
+                android:id="@+id/re_register_passwd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:hint="@string/register_repassword"
+                android:singleLine="true"
+				android:password="true"
+                android:padding="8dp" />
+            <include layout="@layout/layout_line" />
+            
+            <EditText
+                android:id="@+id/register_mail_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:hint="@string/register_mail"
+                android:singleLine="true"
+				
+                android:padding="8dp" />
+            <include layout="@layout/layout_line" />
+            
+            <EditText
+                android:id="@+id/register_academy_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:hint="@string/register_academy"
+                android:singleLine="true"			
+                android:padding="8dp" />
+            <include layout="@layout/layout_line" />
+            <EditText
+                android:id="@+id/register_realname_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:hint="@string/register_realname"
+                android:singleLine="true"			
+                android:padding="8dp" />
+            <include layout="@layout/layout_line" />
+            
+            <EditText
+                android:id="@+id/register_phone_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#0000"
+                android:hint="@string/register_phone"
+                android:singleLine="true"			
+                android:padding="8dp" />
+            <include layout="@layout/layout_line" />
+        </LinearLayout>
+
+        </ScrollView>
+        
+        <Button
+            android:id="@+id/register_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_creat"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/register"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    
+</RelativeLayout>
+<!-- From: file:/E:/ilearning0318/Ilearning0123/res/layout/activity_register.xml -->

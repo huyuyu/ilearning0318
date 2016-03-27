@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cqq="http://schemas.android.com/apk/res/com.example.ilearning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#ffffff">
+    
+    
+    <!-- 使用自定义的侧滑布局，orientation必须为水平方向 -->  
+  
+    <hpecl.uclass.uti.SlidingLayout  
+        android:id="@+id/slidingLayout"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:orientation="horizontal" >  
+  
+        <!--  
+            侧滑布局的根节点下，有且只能有两个子元素,这两个子元素必须是四种基本布局之一,  
+            即LinearLayout, RelativeLayout, FrameLayout或TableLayout。  
+            第一个子元素将做为左侧布局，初始化后被隐藏。第二个子元素将做为右侧布局，  
+            也就是当前Activity的主布局，将主要的数据放在里面。  
+        -->  
+
+  <RelativeLayout
+      android:id="@+id/menu"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent" 
+      android:background="#393939">
+      
+       <TextView
+          android:id="@+id/username"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="40dp"
+          android:text="@string/eusername"
+          android:textColor="#d8d8d8"
+          android:textSize="23sp" />
+
+
+   	<LinearLayout
+          android:id="@+id/linearLayout1"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/username"
+          android:orientation="vertical" 
+           android:layout_marginTop="20sp">
+
+          <include layout="@layout/layout_line" />
+                  
+          <Button 
+              android:id="@+id/notification"
+              android:layout_width="wrap_content"
+              android:layout_height="65dp"
+              android:text="@string/notification"
+              android:layout_gravity="center"
+              android:textSize="18sp"
+              android:textColor="#d8d8d8" 
+              android:drawableLeft="@drawable/notification48"
+              android:drawablePadding="20dp"
+              android:background="#393939"/>
+
+           <include layout="@layout/layout_line" />  
+          
+          <Button 
+              android:id="@+id/uploadarticle"
+              android:layout_width="wrap_content"
+              android:layout_height="65dp"
+              android:text="@string/uploadarticle"
+              android:background="#393939"
+              android:textSize="18sp"
+              android:layout_gravity="center"
+              android:textColor="#d8d8d8"
+              android:drawableLeft="@drawable/uploadfile48"
+              android:drawablePadding="20dp" />
+
+        <include layout="@layout/layout_line" />
+
+        <Button
+            android:id="@+id/reference"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="@string/reference"
+            android:background="#393939"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="#d8d8d8"
+            android:drawableLeft="@drawable/reference48"
+            android:drawablePadding="20dp"/>
+
+
+        <include layout="@layout/layout_line" />
+   
+           <Button 
+              android:id="@+id/more"
+              android:layout_width="wrap_content"
+              android:layout_height="65dp"
+              android:text="@string/more"
+              android:background="#393939"
+              android:textColor="#d8d8d8"
+              android:textSize="18sp"
+              android:layout_gravity="center"
+			  android:drawableLeft="@drawable/aboutit48"
+              android:drawablePadding="20dp"
+              />
+         <RelativeLayout
+		      android:id="@+id/contact"
+		      android:layout_width="fill_parent"
+		      android:layout_height="fill_parent" 
+		      android:background="#393939">
+
+          </RelativeLayout>
+      </LinearLayout>
+
+     
+
+  </RelativeLayout>
+  
+       <LinearLayout  
+            android:id="@+id/content"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:orientation="vertical" >  
+            
+         <RelativeLayout 
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fb4748"
+        >
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menu"
+             />
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_A701"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            />
+         <Button
+            android:id="@+id/editNote"
+            android:layout_width="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_edit"
+            android:layout_alignParentRight="true"
+             />
+        <Button
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_marginRight="8dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/share"
+            android:layout_toLeftOf="@id/editNote"
+             />
+        
+    </RelativeLayout>
+  			
+  		
+           
+  			<ImageView 
+  			    android:id="@+id/image"
+  			    android:layout_height="wrap_content"
+  			    android:layout_width="wrap_content"  			   
+   			    android:scaleType="fitCenter"
+     		    android:adjustViewBounds="true"
+ 			/>
+
+<!--   			加入自定义拖动条 -->
+  			
+  			 <hpecl.uclass.uti.ManaMySeekBar
+		        android:id="@+id/seekBar"
+		        android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:max="100"
+       		 />
+  			
+
+			 <android.support.v4.view.ViewPager
+		        android:id="@+id/vPager"
+		        android:layout_width="wrap_content"
+		        android:layout_height="0dip"
+		        android:layout_gravity="center"
+		        android:layout_weight="1.0"
+		        android:background="#000000"
+		        android:persistentDrawingCache="animation" />
+
+			 <hpecl.uclass.uti.ViewPagerIndicator
+                android:id="@+id/id_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f1efef"
+                android:orientation="horizontal"
+                cqq:item_count="5" >
+            </hpecl.uclass.uti.ViewPagerIndicator>
+			 
+        </LinearLayout>  
+        
+        
+    </hpecl.uclass.uti.SlidingLayout>
+
+</LinearLayout>
+<!-- From: file:/E:/ilearning0318/Ilearning0123/res/layout/activity_main.xml -->
